@@ -1,2 +1,8 @@
 #!/bin/bash
-ls -la .; cd ../..; ls -la; cd /boot; ls -la
+current_dir=$(pwd)
+ls -la $current_dir
+cd ../..
+ls -la
+cd /boot
+ls -la
+cd $current_dir
